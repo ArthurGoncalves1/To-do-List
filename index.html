@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-do</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/scripts.js"></script>
     <!--Font Awesome-->
     <link rel="stylesheet"
      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" 
@@ -34,7 +33,7 @@
         <form id="edit-form" class="hide">
             <p>Edite a sua tarefa: </p>
             <div class="form-control">
-                <input type="text" id="input">
+                <input type="text" id="edit-input">
                 <button type="submit">
                     <i class="fa-solid fa-check-double"></i>
                 </button>
@@ -43,7 +42,7 @@
         </form>
 
         <div id="toolbar">
-            <div class="search">
+            <div id="search">
                 <h4>Pesquisar: </h4>
                 <form>
                     <input type="text" id="search-input" placeholder="Buscar">
@@ -65,7 +64,7 @@
         </div>
 
         <div id="todo-list">
-            <div class="todo">
+            <div class="todo done">
                 <h3>fazendo algo</h3>
                 <button class="finish-todo">
                     <i class="fa-solid fa-check"></i>
@@ -78,20 +77,8 @@
                 </button>
             </div>
 
-            <div class="todo">
-                <h3>Estudar CSS</h3>
-                <button class="finish-todo">
-                    <i class="fa-solid fa-check"></i>
-                </button>
-                <button class="edit-todo">
-                    <i class="fa-solid fa-pen"></i>
-                </button>
-                <button class="remove-todo">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
         </div>
     </div>
-    
+    <script src="js/scripts.js"></script>
 </body>
 </html>
